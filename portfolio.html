@@ -31,7 +31,8 @@
    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 <body class="portfolio-page">
- <!-- HEADER -->
+ 
+    <!-- HEADER -->
 <header>
   <!-- Desktop Navigation -->
   <div class="wrap nav">
@@ -59,14 +60,16 @@
         <li><a href="webar.html">WebAR Solutions</a></li>
       </ul>
     </li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="portfolio.html">Our Solution</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a class="cta-small" href="https://calendly.com/info-innovifyxr">book a free consultation</a></li>
       </ul>
     </nav>
 
-    <div style="display:flex;align-items:center;gap:12px">
+      <!-- RIGHT: CTA BUTTON + MOBILE ICON -->
+    <div class="header-right">
+      <a class="cta-small" href="https://calendly.com/info-innovifyxr">Book a free Consultation</a>
+
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">
         <i class="fas fa-bars"></i>
       </button>
@@ -95,7 +98,7 @@
         <li><a href="webar.html">WebAR Solutions</a></li>
       </ul>
     </li>
-      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="portfolio.html">Our Solution</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a class="cta-small" href="https://calendly.com/info-innovifyxr">book a free consultation</a></li>
@@ -103,154 +106,112 @@
   </div>
 </header>
 
-<!-- Hero Section -->
-<section class="hero-slider-section portfolio-page">
-  <div class="hero-slider-images">
-    <div class="hero-slide active" style="background-image: url('assets/images/portfolio-bg.jpg');">
-      <div class="hero-slider-content">
-        <h1>Our Work</h1>
+<!-- Portfolio HERO SECTION -->
+<section class="portfolio-hero-section">
+  <div class="portfolio-hero-content">
+  <h1>Our Work</h1>
         <p>Showcasing Our Innovative AR/VR Projects</p>
-        <a href="contact.html" class="btn-primary">Get a Demo</a>
-      </div>
-    </div>
-    <div class="hero-slide" style="background-image: url('assets/images/service2.jpg');">
-      <div class="hero-slider-content">
-        <h1>Our Work</h1>
-        <p>Showcasing Our Innovative AR/VR Projects</p>
-        <a href="contact.html" class="btn-primary">Get a Demo</a>
-      </div>
-    </div>
-    <div class="hero-slide" style="background-image: url('assets/images/services1.jpg');">
-      <div class="hero-slider-content">
-        <h1>Our Work</h1>
-        <p>Showcasing Our Innovative AR/VR Projects</p>
-        <a href="contact.html" class="btn-primary">Get a Demo</a>
-      </div>
-    </div>
 
-    <!-- Slider Dots -->
-    <div class="hero-dots">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
+    <a href="contact.html" class="btn-primary">Get a Demo</a>
+  </div>
+
+  <div class="portfolio-hero-slides">
+    <div class="slide active" style="background-image: url('assets/images/portfolio-bg.jpg');"></div>
   </div>
 </section>
 
 <!-- PORTFOLIO SECTION -->
-<section class="portfolio-section">
-  <h2>Our Portfolio</h2>
-  <div class="portfolio-grid">
+<section id="portfolio" class="portfolio" data-aos="fade-up">
+<h2>Projects Powered by Innovation & Immersive Technology</h2>
+<p class="portfolio-desc">
+  We are proud to showcase our most impactful projects built with cutting-edge 
+  immersive technologies. From startups to global enterprises, we help businesses 
+  transform their ideas into powerful digital experiences.
+<br>
+  Our expertise spans industries such as retail, e-commerce, healthcare, education,
+  entertainment, real estate, gaming, and enterprise training. By blending creativity 
+  with advanced tech, we deliver solutions that streamline operations, enhance 
+  engagement, and unlock new possibilities.
+<br>
+  Using AR/VR, AI, mobile apps, blockchain, and interactive 3D environments, 
+  we create smart, future-ready solutions that keep brands ahead in a fast-evolving 
+  digital world.
+</p>
 
-    <div class="portfolio-card" data-title="VR Training Project" data-desc="Enterprise VR training solution." data-img="assets/images/port1.jpg">
-      <img src="assets/images/port1.jpg" alt="VR Training Project">
-      <div class="overlay">
-        <h4>VR Training Project</h4>
-      <p class="muted">Enterprise VR training solution.</p>  
+ <div class="portfolio-grid7">
+
+    <!-- 1 -->
+    <div class="portfolio-card7"data-aos="fade-up" data-aos-delay="0">
+      <img src="assets/images/ar menu.PNG" alt="">
+      <div class="card-content7">
+        <h3>AR Restaurant Menu</h3>
+        <p>A digital AR-based restaurant menu that replaces traditional paper menus.
+           Customers can view realistic 3D food models, 
+          explore ingredients, and get an enhanced ordering experience.</p>
       </div>
     </div>
 
-    <div class="portfolio-card" data-title="AR Shopping App" data-desc="Augmented reality e-commerce app." data-img="assets/images/port2.jpg">
-      <img src="assets/images/port2.jpg" alt="AR Shopping App">
-      <div class="overlay">
-        <h4>
-          <a href="https://play.google.com/store/apps/details?id=com.InniovifyXR.HomeVistaAR">AR Shopping App</a></h4>
-      <p class="muted">Augmented reality e-commerce app.</p>  
+    <!-- 2 -->
+    <div class="portfolio-card7" data-aos="fade-up" data-aos-delay="60">
+      <img src="assets/images/AR Product Showcase App.jpeg" alt="">
+      <div class="card-content7">
+        <h3> AR Product Showcase</h3>
+        <p>An AR tool for businesses to display their products in 3D from any 
+          angle and in real-world environments.
+           Ideal for e-commerce, exhibitions, retail, and branding.</p>
       </div>
     </div>
 
-    <div class="portfolio-card" data-title="Mobile Game" data-desc="Casual mobile game development." data-img="assets/images/port3.jpg">
-      <img src="assets/images/port3.jpg" alt="Mobile Game">
-      <div class="overlay">
-        <h4>
-          <a href="https://play.google.com/store/apps/details?id=com.adventure.BallCatcher">Mobile Game</a></h4>
-      <p class="muted">Casual mobile game development.</p>  
+    <!-- 3 -->
+    <div class="portfolio-card7" data-aos="fade-up" data-aos-delay="120">
+      <img src="assets/images/Home Screen.webp" alt="">
+      <div class="card-content7">
+        <h3>AR HomeVista</h3>
+        <p>Allows customers to visualize furniture, décor items, wall colors, and layouts 
+          inside their homes using AR. Helps reduce returns and boosts customer confidence.</p>
       </div>
     </div>
 
-    <div class="portfolio-card" data-title="WebAR" data-desc="Decentralized marketplace project." data-img="assets/images/port5.jpg">
-      <img src="assets/images/port5.jpg" alt="WebAR">
-      <div class="overlay">
-        <h4>WebAR</h4>
-        <p class="muted">Web-based AR product showcase.</p>
+    <!-- 4 -->
+    <div class="portfolio-card7">
+      <img src="assets/images/vr training.png" alt="">
+      <div class="card-content7">
+        <h3> VR Trainings</h3>
+        <p>A suite of VR training experiences designed to improve learning outcomes,
+           skill development, and safety operations across multiple industries.</p>
       </div>
     </div>
 
-      <div class="portfolio-card" data-title="App Prototype" data-desc="Decentralized marketplace project." data-img="assets/images/port6.jpg">
-      <img src="assets/images/port6.jpg" alt="App Prototype">
-      <div class="overlay">
-        <h4>App Prototype</h4>
-      <p class="muted">Custom mobile app prototype.</p>  
+    <!-- 5 -->
+    <div class="portfolio-card7">
+      <img src="assets/images/VR Welding Training Simulator.jfif" alt="">
+      <div class="card-content7">
+        <h3>VR Welding Training Simulator</h3>
+        <p>A realistic welding practice simulation for technical training institutes. Includes metal-cutting mechanics, 
+          real-time scoring, heat mapping, spark effects, and safety feedback.</p>
       </div>
     </div>
 
-    <div class="portfolio-card" data-title="Helix" data-desc="Decentralized marketplace project." data-img="assets/images/helix.jpg">
-      <img src="assets/images/halix.jpg" alt="Helix">
-      <div class="overlay">
-        <h4><a href="https://helixvault-defi-plat-ymmk.bolt.host/" target="_blank">
-          HelixVault DeFi Platform
-        </a></h4>
-      <p class="muted">Decentralized marketplace project.</p>  
+    <!-- 6 -->
+    <div class="portfolio-card7">
+      <img src="assets/images/halix.jpg" alt="">
+      <div class="card-content7">
+        <h3>HelixVault DeFi Platform</h3>
+        <p>Decentralized finance platform development.</p>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- LIGHTBOX -->
-<div id="portfolio-lightbox">
-  <div class="lightbox-content">
-    <span class="close">&times;</span>
-    <img class="lightbox-img" src="" alt="">
-    <h3 class="lightbox-title"></h3>
-    <p class="lightbox-desc"></p>
-    <span class="prev">&#10094;</span>
-    <span class="next">&#10095;</span>
-  </div>
-</div>
-
- <!-- Testimonials -->
-<section class="testimonials">
-  <h2 class="section-title">Happy Clients!</h2>
-  <p class="section-subtitle">Praise from our successful clients...</p>
-
-  <div class="testimonials-row">
-    <!-- Client 1 -->
-    <div class="testimonial-card" data-aos="fade-up">
-      <div class="testimonial-logo">
-        <img src="assets/images/yamaha.jpg" alt="Yamaha Logo">
+ <!-- 7 -->
+    <div class="portfolio-card7">
+      <img src="assets/images/VR Fire Extinguisher Training Simulator.webp" alt="">
+      <div class="card-content7">
+        <h3>VR Fire Extinguisher Training Simulator</h3>
+        <p>A VR-powered emergency response training tool that teaches 
+          users to operate fire extinguishers 
+          correctly in various fire scenarios with real-time feedback.</p>
       </div>
-      <h3>Lee Somerhalder</h3>
-      <p class="role">Digital Marketing & Strategy Manager at Yamaha</p>
-      <p class="quote">
-        “Sketchfab has allowed us to be agile and efficient at delivering fun
-        digital experiences at scale that drive a significant lift in retail conversion.”
-      </p>
     </div>
 
-    <!-- Client 2 -->
-    <div class="testimonial-card" data-aos="fade-up">
-      <div class="testimonial-logo">
-        <img src="assets/images/deacker.jpg" alt="Deckers Logo">
-      </div>
-      <h3>Mitch Harvey</h3>
-      <p class="role">3D Innovation Manager at Deckers</p>
-      <p class="quote">
-        “People were blown away the first time we presented our new designs using Sketchfab.”
-      </p>
-    </div>
-
-    <!-- Client 3 -->
-    <div class="testimonial-card" data-aos="fade-up">
-      <div class="testimonial-logo">
-        <img src="assets/images/nike-logo.jpg" alt="Nike Logo">
-      </div>
-      <h3>Sarah Johnson</h3>
-      <p class="role">Creative Director at Nike</p>
-      <p class="quote">
-        “Their platform made it possible to launch immersive experiences that captured our customers’ attention instantly.”
-      </p>
-    </div>
   </div>
 </section>
 

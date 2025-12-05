@@ -31,7 +31,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
 <body class="service-page">
- <!-- HEADER -->
+ 
+    <!-- HEADER -->
 <header>
   <!-- Desktop Navigation -->
   <div class="wrap nav">
@@ -59,14 +60,16 @@
         <li><a href="webar.html">WebAR Solutions</a></li>
       </ul>
     </li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="portfolio.html">Our Solution</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a class="cta-small" href="https://calendly.com/info-innovifyxr">book a free consultation</a></li>
       </ul>
     </nav>
 
-    <div style="display:flex;align-items:center;gap:12px">
+      <!-- RIGHT: CTA BUTTON + MOBILE ICON -->
+    <div class="header-right">
+      <a class="cta-small" href="https://calendly.com/info-innovifyxr">Book a free Consultation</a>
+
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">
         <i class="fas fa-bars"></i>
       </button>
@@ -95,7 +98,7 @@
         <li><a href="webar.html">WebAR Solutions</a></li>
       </ul>
     </li>
-      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="portfolio.html">Our Solution</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a class="cta-small" href="https://calendly.com/info-innovifyxr">book a free consultation</a></li>
@@ -103,22 +106,23 @@
   </div>
 </header>
 
- <!-- HERO SECTION -->
-  <section class="hero-slider-section">
-    <div class="hero-slider-content">
-      <h1>Unlocking knowledge.<br>Ensuring innovation.</h1>
-      <p>
-        InnovifyXR provides AR/VR Training Platforms and immersive solutions 
-        that revolutionize digital experiences across industries.
-      </p>
-      <a href="contact.html" class="btn-primary">Get a Demo</a>
-    </div>
-    <div class="hero-slider-images">
-      <div class="hero-slide active" style="background-image: url('assets/images/services2.jpg');"></div>
-      <div class="hero-slide" style="background-image: url('assets/images/project1.jpg');"></div>
-      <div class="hero-slide" style="background-image: url('assets/images/service.jpg');"></div>
-    </div>
-  </section>
+<section id="service-hero" class="service-hero">
+  
+  <!-- BG Image inside HTML -->
+  <img src="assets/images/services2.jpg" alt="Hero Image" class="hero-bg">
+
+  <div class="hero-overlay-content">
+    <h1>Unlocking knowledge.<br>Ensuring innovation.</h1>
+    <p>
+      InnovifyXR provides AR/VR Training Platforms and immersive solutions 
+      that revolutionize digital experiences across industries.
+    </p>
+    <a href="contact.html" class="btn-primary">Get a Demo</a>
+  </div>
+
+</section>
+
+
 <section class="vision-mission-section" data-aos="fade-up">
   <div class="vision-mission-img" data-aos="fade-right">
     <img src="assets/images/teams.webp" alt="Vision InnovifyXR">
@@ -133,94 +137,191 @@
   </div>
 </section>
 
-<!-- OUR SERVICES -->
-<section id="models" class="section service-page" data-aos="fade-up">
-  <h2 data-aos="fade-down" data-aos-delay="100">Our Services</h2>
-<p>
-    We specialize in creating cutting-edge digital experiences that help businesses
-    stand out, connect with their audience, and achieve real results through
-    <i>the latest AR, VR, Game, and App technologies.</i>
+
+<!-- SERVICES SECTION -->
+<section id="services-section3" class="services-wrapper" data-aos="fade-up">
+
+  <h2 class="services-title" data-aos="fade-down" data-aos-delay="100">
+    Services We Offer
+  </h2>
+
+  <p class="services-intro" data-aos="fade-up" data-aos-delay="150">
+    Step into the future of interactive digital solutions. We design and develop 
+    immersive AR, VR, WebAR, games, and mobile applications—created to help 
+    businesses innovate, engage, and grow using next-generation technology.
   </p>
-  <div class="models-grid">
-    <!-- AR Model -->
-    <div class="model-card" data-aos="fade-up">
-      <model-viewer src="public/models/ar.glb" alt="AR Model"
-        auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look">
-      </model-viewer>
-      <h3><a href="ar.html">Augmented Reality (AR) Development</a></h3>
-      <p class="muted">Immersive AR experiences for business & customers.</p>
+
+  <div class="services-grid">
+
+    <!-- CARD 1 -->
+    <div class="service-box" data-aos="fade-up">
+      <div class="service-icon">
+        <img src="assets/images/ar2.jpg" alt="AR Icon">
+      </div>
+      <h3>Augmented Reality (AR) Development</h3>
+      <p>Build immersive AR apps that transform real-world interaction.</p>
+      <a href="ar.html" class="service-btn">Learn More</a>
     </div>
 
-    <!-- VR Model -->
-    <div class="model-card" data-aos="fade-up" data-aos-delay="80">
-      <model-viewer src="public/models/vr.glb" alt="VR Model"
-        auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look">
-      </model-viewer>
-      <h3><a href="vr.html">Virtual Reality (VR) Solutions</a></h3>
-      <p class="muted">Interactive VR apps & training simulations.</p>
+    <!-- CARD 2 -->
+    <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+      <div class="service-icon">
+        <img src="assets/images/vr.jpg" alt="VR Icon"> <!-- your image here -->
+      </div>
+      <h3>Virtual Reality (VR) Solutions</h3>
+      <p>Create powerful VR simulations and interactive virtual experiences.</p>
+      <a href="vr.html" class="service-btn">Learn More</a>
     </div>
 
-    <!-- Game Model -->
-    <div class="model-card" data-aos="fade-up" data-aos-delay="160">
-      <model-viewer src="public/models/game.glb" alt="Game Model"
-        auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look">
-      </model-viewer>
-      <h3><a href="game.html">Mobile Video Game Development</a></h3>
-      <p class="muted">Engaging games for Android & iOS.</p>
+    <!-- CARD 3 -->
+    <div class="service-box" data-aos="fade-up" data-aos-delay="150">
+      <div class="service-icon">
+        <img src="assets/images/game-bg.jpeg" alt="Game Icon"> <!-- your image here -->
+      </div>
+      <h3>Mobile Game Development</h3>
+      <p>Engaging mobile games built with creativity and innovation.</p>
+      <a href="game.html" class="service-btn">Learn More</a>
     </div>
 
-    <!-- Blockchain Model -->
-    <div class="model-card" data-aos="fade-up">
-      <model-viewer src="public/models/bockchain.glb" alt="Blockchain Model"
-        auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look">
-      </model-viewer>
-      <h3><a href="blockchain.html">Blockchain & Web3</a></h3>
-      <p class="muted">Integrating Web3 solutions with AR/VR for secure digital innovation.</p>
+    <!-- CARD 4 -->
+    <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+      <div class="service-icon">
+        <img src="assets/images/blockchain.webp" alt="Web3 Icon"> <!-- your image here -->
+      </div>
+      <h3>Blockchain & Web3 Integration</h3>
+      <p>Secure, modern Web3 solutions combined with immersive experiences.</p>
+      <a href="blockchain.html" class="service-btn">Learn More</a>
     </div>
 
-    <!-- Apps Model -->
-    <div class="model-card" data-aos="fade-up" data-aos-delay="80">
-      <model-viewer src="public/models/app.glb" alt="Apps Model"
-        auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look">
-      </model-viewer>
-      <h3><a href="app.html">Mobile App Development</a></h3>
-      <p class="muted">Native and hybrid mobile apps with seamless UX and performance.</p>
+    <!-- CARD 5 -->
+    <div class="service-box" data-aos="fade-up" data-aos-delay="250">
+      <div class="service-icon">
+        <img src="assets/images/app.jpg" alt="App Icon"> <!-- your image here -->
+      </div>
+      <h3>Mobile App Development</h3>
+      <p>Fast, scalable, and user-friendly apps for Android & iOS.</p>
+      <a href="app.html" class="service-btn">Learn More</a>
     </div>
 
-    <!-- WebAR Model -->
-    <div class="model-card" data-aos="fade-up" data-aos-delay="160">
-      <model-viewer src="public/models/webar.glb" alt="WebAR Model"
-        auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look">
-      </model-viewer>
-      <h3><a href="webar.html">WebAR Development</a></h3>
-      <p class="muted">Browser-based AR solutions for instant access and brand growth.</p>
+    <!-- CARD 6 -->
+    <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+      <div class="service-icon">
+        <img src="assets/images/webar.jpg" alt="WebAR Icon"> <!-- your image here -->
+      </div>
+      <h3>WebAR Development</h3>
+      <p>Instant AR experiences that run directly inside the browser.</p>
+      <a href="webar.html" class="service-btn">Learn More</a>
     </div>
-  </div> 
+
+  </div>
 </section>
 
 
- <!-- HOW WE WORK -->
-  <section class="how-we-work-section container">
-    <h2>How We Work</h2>
-    <div class="how-we-work-steps">
-      <div class="how-step">
-        <h3>1. Discover</h3>
-        <p>Understanding client needs and designing the right AR/VR strategy.</p>
-      </div>
-      <div class="how-step">
-        <h3>2. Design</h3>
-        <p>Creative concepts and prototypes tailored to business goals.</p>
-      </div>
-      <div class="how-step">
-        <h3>3. Develop</h3>
-        <p>Building powerful, interactive, and scalable XR applications.</p>
-      </div>
-      <div class="how-step">
-        <h3>4. Deliver</h3>
-        <p>Launching with support, training, and continuous improvement.</p>
-      </div>
+<!-- HOW WE WORK -->
+<section class="workflow-section" id="workflow" data-aos="fade-up">
+
+  <h2 class="workflow-title" data-aos="fade-down">How We Work</h2>
+  <p class="workflow-intro" data-aos="fade-up" data-aos-delay="100">
+    Our process is built to transform your ideas into powerful, high-performing digital experiences.
+    From discovery to deployment, every step ensures quality, precision, and innovation.
+  </p>
+
+  <div class="workflow-grid">
+
+    <!-- STEP BOX -->
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-search"></i></div>
+      <h3>Discovery</h3>
+      <p>Understanding your goals, challenges, and project vision.</p>
     </div>
-  </section>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-chart-line"></i></div>
+      <h3>Research</h3>
+      <p>Analyzing market, users, and technology solutions for your idea.</p>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-brain"></i></div>
+      <h3>Concept Planning</h3>
+      <p>Structuring the roadmap, features, and system flow.</p>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-palette"></i></div>
+      <h3>UI/UX Design</h3>
+      <p>Creating intuitive, appealing, and user-centered designs.</p>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-layer-group"></i></div>
+      <h3>Prototype</h3>
+      <p>Interactive prototype to demonstrate the user experience.</p>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-cubes"></i></div>
+      <h3>Content Production</h3>
+      <p>3D modeling, animation, sound, and assets creation.</p>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-code"></i></div>
+      <h3>Development</h3>
+      <p>Building your AR, VR, app, or game with the latest technologies.</p>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-plug"></i></div>
+      <h3>Integration</h3>
+      <p>Connecting APIs, databases, services, and backend functionality.</p>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-check-circle"></i></div>
+      <h3>Testing & QA</h3>
+      <p>Quality check, bug fixing, performance optimization.</p>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-user-check"></i></div>
+      <h3>Client Review</h3>
+      <p>Feedback, refinement, and updates based on your requirements.</p>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-rocket"></i></div>
+      <h3>Deployment</h3>
+      <p>Launching your project on the required platforms.</p>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+      <h3>Training</h3>
+      <p>Providing training, documentation, and onboarding.</p>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-headset"></i></div>
+      <h3>Support</h3>
+      <p>Ongoing updates, maintenance, and performance monitoring.</p>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+      <h3>Scale & Upgrade</h3>
+      <p>Expanding features and scaling your experience as you grow.</p>
+    </div>
+
+      <div class="workflow-step">
+      <div class="workflow-icon"><i class="fas fa-lightbulb"></i></div>
+      <h3>Innovation Cycle</h3>
+      <p>Continuous improvement to keep your product modern and competitive.</p>
+    </div>
+  </div>
+</section>
+
+
 
 <!-- Testimonials -->
 <section class="testimonials">
@@ -267,14 +368,15 @@
   </div>
 </section>
  
- <!-- CTA -->
-    <section id="cta" class="cta-section section" data-aos="fade-up">
-      <h1>Let’s Collaborate Together</h1>
-      <p>Drop us a line, we'll be happy to chat about how we can drive your training outcomes.</p>
-      <a href="contact.html" class="cta-btn">GET FREE DEMO</a>
-    </section>
-
-
+<section id="cta" class="cta-section section" 
+style="background-image: url('assets/images/cta btn.jpg'); background-size: cover; background-position: center;">
+  
+  <div class="cta-content">
+    <h1>Discover the possibilities of<br>for your XR business.</h1>
+    <p>Drop us a line, we'll be happy to chat about how we can drive your training outcomes.</p>
+    <a href="contact.html" class="cta-btn">GET STARTED</a>
+  </div>
+</section>
 
  
   <!-- FOOTER -->

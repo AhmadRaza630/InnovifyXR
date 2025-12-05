@@ -31,7 +31,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
 <body class="webar-page">
-  <!-- HEADER -->
+
+    <!-- HEADER -->
 <header>
   <!-- Desktop Navigation -->
   <div class="wrap nav">
@@ -59,14 +60,16 @@
         <li><a href="webar.html">WebAR Solutions</a></li>
       </ul>
     </li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="portfolio.html">Our Solution</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a class="cta-small" href="https://calendly.com/info-innovifyxr">book a free consultation</a></li>
       </ul>
     </nav>
 
-    <div style="display:flex;align-items:center;gap:12px">
+      <!-- RIGHT: CTA BUTTON + MOBILE ICON -->
+    <div class="header-right">
+      <a class="cta-small" href="https://calendly.com/info-innovifyxr">Book a free Consultation</a>
+
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">
         <i class="fas fa-bars"></i>
       </button>
@@ -95,7 +98,7 @@
         <li><a href="webar.html">WebAR Solutions</a></li>
       </ul>
     </li>
-      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="portfolio.html">Our Solution</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a class="cta-small" href="https://calendly.com/info-innovifyxr">book a free consultation</a></li>
@@ -103,17 +106,26 @@
   </div>
 </header>
 
- <!-- HERO -->
-  <section class="hero" style="background-image:url('assets/images/webar-bg.jpg');">
-    <div class="hero-content">
-      <h1>WebAR Development</h1>
-      <p>Browser-based AR solutions for instant access and brand growth</p>
-         <div class="cta-buttons">
-      <a href="contact.html" class="btn-primary">Project started</a>
-       <a href="https://calendly.com/info-innovifyxr" class="btn-primary">Get a free consultation</a>
+ <!-- HERO SECTION -->
+
+<section class="hero" style="background-image: url('assets/images/webar-bg.jpg');">
+  <div class="hero-content">
+<h1>Bring the Web to Life with<br> <span>Interactive WebAR Experiences</span></h1>
+
+<p>
+  We craft accessible WebAR solutions that allow users to explore AR experiences directly in their browser, 
+  from product visualizations to interactive marketing campaigns.
+</p>
+
+
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn-primary1">Start Your Project</a>
+      <a href="https://calendly.com/info-innovifyxr" class="btn-secondary1">Free Consultation</a>
     </div>
-    </div>
-  </section>
+  </div>
+
+  </div>
+</section>
 
 <!-- Info Section (Image on top, Text below) -->
 <section class="info-stack">
@@ -183,32 +195,57 @@
     </div>
   </section>
 
-  <!-- RELATED SERVICES SECTION -->
-  <section class="related-services">
+ <!-- RELATED SERVICES SECTION -->
+  <section class="related-services1">
   <h2>Other Services You May Like</h2>
-  <div class="services-grid">
-    <div class="service-card">
-      <img src="assets/images/vr.jpg" alt="VR Development" loading="lazy">
-      <div class="service-overlay">
-        <h3><a href="vr.html">VR Development</a></h3>
-        <p>Immersive VR experiences for training and engagement.</p>
-      </div>
-    </div>
-    <div class="service-card">
-      <img src="assets/images/game1.jpg" alt="Game Development" loading="lazy">
-      <div class="service-overlay">
-        <h3><a href="game.html">Game Development</a></h3>
-        <p>Fun, high-performance games for mobile and VR.</p>
+
+    <div class="services-grid3">
+
+    <!-- CARD 1 -->
+    <div class="service-card3">
+      <img src="assets/images/ars1.avif" class="card-img3" alt="AR Development">
+
+      <a href="services.html" class="card-arrow3">→</a>
+
+      <div class="card-overlay3">
+        <h3>AR Development</h3>
+        <p>
+          Create next-level AR experiences that bring your products, spaces, and ideas
+          to life. From interactive previews to immersive brand activations.
+        </p>
       </div>
     </div>
 
-     <div class="service-card">
-      <img src="assets/images/app.jpg" alt="app Development" loading="lazy">
-      <div class="service-overlay">
-        <h3><a href="app.html">Mobile app Development</a></h3>
-        <p>Native and hybrid mobile apps with seamless UX and performance.</p>
+    <!-- CARD 2 -->
+    <div class="service-card3">
+      <img src="assets/images/vrs1.webp" class="card-img3" alt="VR Solutions">
+
+      <a href="services.html" class="card-arrow3">→</a>
+
+      <div class="card-overlay3">
+        <h3>VR Solutions</h3>
+        <p>
+          Build powerful VR simulations for training, education, entertainment,
+          and enterprise use with realistic interaction and immersive visuals.
+        </p>
       </div>
     </div>
+
+    <!-- CARD 3 -->
+    <div class="service-card3">
+      <img src="assets/images/game1.jpg" class="card-img3" alt="Mobile Game Development">
+
+      <a href="services.html" class="card-arrow3">→</a>
+
+      <div class="card-overlay3">
+        <h3>Mobile Video Game Development</h3>
+        <p>
+          We create high-performance mobile games with stunning graphics, smooth
+          gameplay, and advanced mechanics for iOS and Android.
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -240,25 +277,89 @@
     </div>
   </section>
 
-  <!-- TOOLS & TECHNOLOGIES -->
-<section class="tools-tech-section container" data-aos="fade-up">
-  <h2 data-aos="fade-down">Tools & Technologies</h2>
+<!-- ===============================
+      WEBAR TOOLS & TECHNOLOGIES
+================================= -->
+
+<section class="section-wrapper">
+  <h2>Powerful WebAR Tools & Technologies for Browser-Based AR Experiences</h2>
+  <p>We use modern WebAR frameworks, 3D engines, and cloud-based AR platforms to create immersive augmented reality experiences directly inside the browser without any app installation.</p>
+
   <div class="tools-grid">
-    <div class="tool-card">8thWall</div>
-    <div class="tool-card">ZapWorks</div>
-    <div class="tool-card">WebXR APIs</div>
-    <div class="tool-card">Three.js</div>
-    <div class="tool-card">A-Frame</div>
+
+    <!-- 1 -->
+    <div class="tool-card">
+      <img src="assets/images/8thwall-logo.webp" alt="8thWall" />
+      <h4>8th Wall</h4>
+    </div>
+
+    <!-- 2 -->
+    <div class="tool-card">
+      <img src="assets/images/lensstudio.jfif" alt="Lens Studio" />
+      <h4>Lens Studio</h4>
+    </div>
+
+    <!-- 3 -->
+    <div class="tool-card">
+      <img src="assets/images/sparkar-icon.webp" alt="Spark AR" />
+      <h4>Spark AR</h4>
+    </div>
+
+    <!-- 4 -->
+    <div class="tool-card">
+      <img src="assets/images/three-js-logo.webp" alt="Three.js" />
+      <h4>Three.js</h4>
+    </div>
+
+    <!-- 5 -->
+    <div class="tool-card">
+      <img src="assets/images/webxr.png" alt="WebXR" />
+      <h4>WebXR API</h4>
+    </div>
+
+    <!-- 6 -->
+    <div class="tool-card">
+      <img src="assets/images/a-frame.png" alt="A-Frame" />
+      <h4>A-Frame</h4>
+    </div>
+
+    <!-- 7 -->
+    <div class="tool-card">
+      <img src="assets/images/babylonjs.png" alt="Babylon.js" />
+      <h4>Babylon.js</h4>
+    </div>
+
+    <!-- 8 -->
+    <div class="tool-card">
+      <img src="assets/images/mindar.png" alt="MindAR" />
+      <h4>MindAR</h4>
+    </div>
+
+    <!-- 9 -->
+    <div class="tool-card">
+      <img src="assets/images/model-viewer.jfif" alt="Model Viewer" />
+      <h4>Model-Viewer</h4>
+    </div>
+
+    <!-- 10 -->
+    <div class="tool-card">
+      <img src="assets/images/niantic-lightship.png" alt="Niantic Lightship" />
+      <h4>Niantic Lightship</h4>
+    </div>
+
   </div>
 </section>
+
  
-<!-- CTA -->
-    <section id="cta" class="cta-section section" data-aos="fade-up">
-      <h1>Ready to Create Your App?</h1>
-      <p>Drop us a line, we'll be happy to chat about how we can drive your training outcomes.</p>
-      <a href="contact.html" class="cta-btn">GET FREE DEMO</a>
-    </section>
- 
+<section id="cta" class="cta-section section" 
+style="background-image: url('assets/images/cta btn.jpg'); background-size: cover; background-position: center;">
+  
+  <div class="cta-content">
+    <h1>Discover the possibilities of<br>for your XR business.</h1>
+    <p>Drop us a line, we'll be happy to chat about how we can drive your training outcomes.</p>
+    <a href="contact.html" class="cta-btn">GET STARTED</a>
+  </div>
+</section>
    <!-- FOOTER -->
   <footer>
     <div class="footer-container wrap">

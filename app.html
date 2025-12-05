@@ -33,7 +33,8 @@
 
   
 <body class="app-page">
- <!-- HEADER -->
+
+    <!-- HEADER -->
 <header>
   <!-- Desktop Navigation -->
   <div class="wrap nav">
@@ -61,14 +62,16 @@
         <li><a href="webar.html">WebAR Solutions</a></li>
       </ul>
     </li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="portfolio.html">Our Solution</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a class="cta-small" href="https://calendly.com/info-innovifyxr">book a free consultation</a></li>
       </ul>
     </nav>
 
-    <div style="display:flex;align-items:center;gap:12px">
+      <!-- RIGHT: CTA BUTTON + MOBILE ICON -->
+    <div class="header-right">
+      <a class="cta-small" href="https://calendly.com/info-innovifyxr">Book a free Consultation</a>
+
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">
         <i class="fas fa-bars"></i>
       </button>
@@ -97,23 +100,32 @@
         <li><a href="webar.html">WebAR Solutions</a></li>
       </ul>
     </li>
-      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="portfolio.html">Our Solution</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a class="cta-small" href="https://calendly.com/info-innovifyxr">book a free consultation</a></li>
     </ul>
   </div>
 </header>
+
 <main>
-<!-- HERO -->
-<section class="hero" style="background-image:url('assets/images/app-bg.avif');">
+<!-- HERO SECTION -->
+
+<section class="hero" style="background-image: url('assets/images/app-bg.avif');">
   <div class="hero-content">
-    <h1>Mobile App Development</h1>
-    <p>Native and hybrid mobile apps with seamless UX and performance</p>
-        <div class="cta-buttons">
-      <a href="contact.html" class="btn-primary">Project started</a>
-       <a href="https://calendly.com/info-innovifyxr" class="btn-primary">Get a free consultation</a>
+    
+ <h1>Transform Ideas into Reality with<br> <span>Innovative Mobile Apps</span></h1>
+
+<p>
+  We design and develop high-quality mobile applications that engage users, 
+  optimize performance, and deliver seamless experiences across iOS and Android devices.
+</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn-primary1">Start Your Project</a>
+      <a href="https://calendly.com/info-innovifyxr" class="btn-secondary1">Free Consultation</a>
     </div>
+  </div>
+
   </div>
 </section>
 <!-- Info Section (Image on top, Text below) -->
@@ -198,31 +210,57 @@
   </section>
 
  <!-- RELATED SERVICES SECTION -->
-<section class="related-services">
+  <section class="related-services1">
   <h2>Other Services You May Like</h2>
-  <div class="services-grid">
-    <div class="service-card">
-      <img src="assets/images/AR.jpg" alt="AR Development" loading="lazy">
-      <div class="service-overlay">
-        <h3><a href="ar.html">AR Development</a></h3>
-        <p>Interactive AR apps and WebAR filters for businesses.</p>
+  <div class="services-grid3">
+
+    <!-- CARD 1 -->
+    <div class="service-card3">
+      <img src="assets/images/ars1.avif" class="card-img3" alt="AR Development">
+
+      <a href="services.html" class="card-arrow3">→</a>
+
+      <div class="card-overlay3">
+        <h3>AR Development</h3>
+        <p>
+          Create next-level AR experiences that bring your products, spaces, and ideas
+          to life. From interactive previews to immersive brand activations.
+        </p>
       </div>
     </div>
-    <div class="service-card">
-      <img src="assets/images/vr.jpg" alt="VR Development" loading="lazy">
-      <div class="service-overlay">
-        <h3><a href="vr.html">VR Development</a></h3>
-        <p>Immersive VR experiences for training and engagement.</p>
+
+    <!-- CARD 2 -->
+    <div class="service-card3">
+      <img src="assets/images/vrs1.webp" class="card-img3" alt="VR Solutions">
+
+      <a href="services.html" class="card-arrow3">→</a>
+
+      <div class="card-overlay3">
+        <h3>VR Solutions</h3>
+        <p>
+          Build powerful VR simulations for training, education, entertainment,
+          and enterprise use with realistic interaction and immersive visuals.
+        </p>
       </div>
     </div>
-    <div class="service-card">
-      <img src="assets/images/game1.jpg" alt="Game Development" loading="lazy">
-      <div class="service-overlay">
-        <h3><a href="game.html">Game Development</a></h3>
-        <p>Fun, high-performance games for mobile and VR.</p>
+
+    <!-- CARD 3 -->
+    <div class="service-card3">
+      <img src="assets/images/game1.jpg" class="card-img3" alt="Mobile Game Development">
+
+      <a href="services.html" class="card-arrow3">→</a>
+
+      <div class="card-overlay3">
+        <h3>Mobile Video Game Development</h3>
+        <p>
+          We create high-performance mobile games with stunning graphics, smooth
+          gameplay, and advanced mechanics for iOS and Android.
+        </p>
       </div>
     </div>
+
   </div>
+</section>
 
  <!-- HOW WE WORK -->
   <section class="how-we-work-section container">
@@ -252,24 +290,119 @@
     </div>
   </section>
 
-<!-- TOOLS & TECHNOLOGIES -->
-<section class="tools-tech-section container" data-aos="fade-up">
-  <h2 data-aos="fade-down">Tools & Technologies</h2>
+<!-- ===============================
+      MOBILE APP TOOLS & TECHNOLOGIES
+================================= -->
+
+<section class="section-wrapper">
+  <h2>Powerful Mobile App Development Tools & Technologies</h2>
+  <p>We use the latest mobile app development frameworks, UI kits, and backend technologies to build high-performance Android, iOS, and cross-platform applications.</p>
+
   <div class="tools-grid">
-    <div class="tool-card">Flutter</div>
-    <div class="tool-card">React Native</div>
-    <div class="tool-card">Swift (iOS)</div>
-    <div class="tool-card">Kotlin (Android)</div>
-    <div class="tool-card">Firebase</div>
+
+    <!-- 1 -->
+    <div class="tool-card">
+      <img src="assets/images/flutter.png" alt="Flutter" />
+      <h4>Flutter</h4>
+    </div>
+
+    <!-- 2 -->
+    <div class="tool-card">
+      <img src="assets/images/react-native.png" alt="React Native" />
+      <h4>React Native</h4>
+    </div>
+
+    <!-- 3 -->
+    <div class="tool-card">
+      <img src="assets/images/swift.png" alt="Swift" />
+      <h4>Swift (iOS)</h4>
+    </div>
+
+    <!-- 4 -->
+    <div class="tool-card">
+      <img src="assets/images/kotlin.png" alt="Kotlin" />
+      <h4>Kotlin (Android)</h4>
+    </div>
+
+    <!-- 5 -->
+    <div class="tool-card">
+      <img src="assets/images/java.png" alt="Java" />
+      <h4>Java</h4>
+    </div>
+
+    <!-- 6 -->
+    <div class="tool-card">
+      <img src="assets/images/xcode.png" alt="Xcode" />
+      <h4>Xcode</h4>
+    </div>
+
+    <!-- 7 -->
+    <div class="tool-card">
+      <img src="assets/images/android studio.jfif" alt="Android Studio" />
+      <h4>Android Studio</h4>
+    </div>
+
+    <!-- 8 -->
+    <div class="tool-card">
+      <img src="assets/images/firebase.png" alt="Firebase" />
+      <h4>Firebase</h4>
+    </div>
+
+    <!-- 9 -->
+    <div class="tool-card">
+      <img src="assets/images/aws.jfif" alt="AWS" />
+      <h4>AWS</h4>
+    </div>
+
+    <!-- 10 -->
+    <div class="tool-card">
+      <img src="assets/images/nodejs.png" alt="Node.js" />
+      <h4>Node.js</h4>
+    </div>
+
+    <!-- 11 -->
+    <div class="tool-card">
+      <img src="assets/images/graphql.png" alt="GraphQL" />
+      <h4>GraphQL</h4>
+    </div>
+
+    <!-- 12 -->
+    <div class="tool-card">
+      <img src="assets/images/mysql.png" alt="MySQL" />
+      <h4>MySQL</h4>
+    </div>
+
+    <!-- 13 -->
+    <div class="tool-card">
+      <img src="assets/images/monoBD.png" alt="MongoDB" />
+      <h4>MongoDB</h4>
+    </div>
+
+    <!-- 14 -->
+    <div class="tool-card">
+      <img src="assets/images/figma.png" alt="Figma" />
+      <h4>Figma</h4>
+    </div>
+
+    <!-- 15 -->
+    <div class="tool-card">
+      <img src="assets/images/sketch.png" alt="Sketch" />
+      <h4>Sketch</h4>
+    </div>
+
   </div>
 </section>
 
-  <!-- CTA -->
-    <section id="cta" class="cta-section section" data-aos="fade-up">
-       <h1>Ready to Create Your App?</h1>
-      <p>Drop us a line, we'll be happy to chat about how we can drive your training outcomes.</p>
-      <a href="contact.html" class="cta-btn">GET FREE DEMO</a>
-    </section>
+
+  <section id="cta" class="cta-section section" 
+style="background-image: url('assets/images/cta btn.jpg'); background-size: cover; background-position: center;">
+  
+  <div class="cta-content">
+    <h1>Discover the possibilities of<br>for your XR business.</h1>
+    <p>Drop us a line, we'll be happy to chat about how we can drive your training outcomes.</p>
+    <a href="contact.html" class="cta-btn">GET STARTED</a>
+  </div>
+</section>
 </main>
   <!-- FOOTER -->
   <footer>

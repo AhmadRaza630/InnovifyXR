@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 // ==========================
 // AOS INIT
 // ==========================
@@ -328,99 +327,3 @@ fs.readdirSync(inputFolder).forEach(file => {
 
 console.log("Batch conversion started...");
 
-
-
-// Models 
-
-function initThreeModel(containerId, modelPath) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
-
-  // Scene
-  const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x111111);
-
-  // Camera
-  const camera = new THREE.PerspectiveCamera(
-    35,
-    container.clientWidth / container.clientHeight,
-    0.1,
-    1000
-  );
-  camera.position.set(0, 1, 2.5);
-
-  // Renderer
-  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-  renderer.setSize(container.clientWidth, container.clientHeight);
-  renderer.setPixelRatio(window.devicePixelRatio);
-  container.appendChild(renderer.domElement);
-
-  // Lights
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
-  scene.add(ambientLight);
-  const directionalLight = new THREE.DirectionalLight(0xffffff, 0.6);
-  directionalLight.position.set(5, 5, 5);
-  scene.add(directionalLight);
-
-  // Controls
-  const controls = new THREE.OrbitControls(camera, renderer.domElement);
-  controls.enableZoom = false;
-  controls.enablePan = false;
-  controls.autoRotate = true;
-  controls.autoRotateSpeed = 1;
-
-  // Load GLTF model
-  const loader = new THREE.GLTFLoader();
-  loader.load(modelPath, (gltf) => {
-    const model = gltf.scene;
-
-    const box = new THREE.Box3().setFromObject(model);
-    const size = new THREE.Vector3();
-    box.getSize(size);
-    const maxDim = Math.max(size.x, size.y, size.z);
-    const scale = 1.2 / maxDim;
-    model.scale.setScalar(scale);
-
-    box.setFromObject(model);
-    box.getCenter(model.position).multiplyScalar(-1);
-
-    scene.add(model);
-  });
-
-  // Resize
-  window.addEventListener('resize', () => {
-    camera.aspect = container.clientWidth / container.clientHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(container.clientWidth, container.clientHeight);
-  });
-
-  container.addEventListener('mouseenter', () => controls.autoRotateSpeed = 3);
-  container.addEventListener('mouseleave', () => controls.autoRotateSpeed = 1);
-
-  function animate() {
-    requestAnimationFrame(animate);
-    controls.update();
-    renderer.render(scene, camera);
-  }
-  animate();
-}
-
-// Initialize models
-initThreeModel('ar-model', '/models/ar.glb');
-initThreeModel('vr-model', '/models/vr.glb');
-initThreeModel('app-model', '/models/app.glb');
-
-// Scroll fade-up
-function animateModelsOnScroll() {
-  const models = document.querySelectorAll('.three-model');
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    },
-    { threshold: 0.2 }
-  );
-  models.forEach(model => observer.observe(model));
-}
-animateModelsOnScroll();
